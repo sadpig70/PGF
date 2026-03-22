@@ -78,6 +78,11 @@ PGF/
     └── examples/                # Usage examples
         ├── api-service.md
         └── content-gen-system.md
+├── ag_pgf/                      # Antigravity platform implementation
+│   ├── SKILL.md                 # ag_pgf skill entry point (v3.0)
+│   ├── PG_NOTATION.md           # PG notation for Antigravity
+│   ├── SELF_EVOLUTION_LOG.md    # Self-evolution history
+│   └── ...                      # Same reference structure as pgf/
 ├── samples/                     # Getting started guides
 │   ├── 01-pg-basics.md          # PG notation tutorial
 │   └── 02-pgf-workflow.md       # PGF 4-phase workflow tutorial
@@ -102,6 +107,19 @@ PGF is designed as a Claude Code skill. Install the `pg/` and `pgf/` directories
 /pgf discover "topic"      # 8-persona idea discovery
 /pgf create "topic"        # Full autonomous creation cycle
 ```
+
+## Antigravity Implementation
+
+The `ag_pgf/` directory contains **PGF v3.0 for the Antigravity platform** — a port that replaces Claude Code-specific mechanisms with Antigravity-native tools:
+
+| Aspect | pgf/ (Claude Code) | ag_pgf/ (Antigravity) |
+|--------|--------------------|-----------------------|
+| **Execution engine** | Stop Hook + PowerShell scripts | `task_boundary` (native) |
+| **State tracking** | `status-*.json` files | `task.md` artifact |
+| **Memory** | Session-isolated context | `ag_memory` (global, persistent) |
+| **Loop mode** | `/pgf loop start` | `task_boundary(EXECUTION)` continuous |
+
+Both implementations share the same PG notation and core design philosophy. The `ag_pgf/` port demonstrates PG's platform-agnostic nature — the same design language adapts to different AI runtimes.
 
 ## License
 
