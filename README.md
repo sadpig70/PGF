@@ -78,7 +78,17 @@ PGF/
     └── examples/                # Usage examples
         ├── api-service.md
         └── content-gen-system.md
+├── samples/                     # Getting started guides
+│   ├── 01-pg-basics.md          # PG notation tutorial
+│   └── 02-pgf-workflow.md       # PGF 4-phase workflow tutorial
 ```
+
+## Getting Started
+
+New to PG/PGF? Start here:
+
+1. **[PG Basics](samples/01-pg-basics.md)** — Learn Gantree decomposition and PPR intent specs
+2. **[PGF Workflow](samples/02-pgf-workflow.md)** — See the full design → plan → execute → verify cycle
 
 ## Usage with Claude Code
 
