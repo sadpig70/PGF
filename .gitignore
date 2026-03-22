@@ -1,0 +1,22 @@
+# Project-local Claude Code config
+CLAUDE.md
+
+# PGF runtime artifacts
+DESIGN-*.md
+WORKPLAN-*.md
+REVIEW-*.md
+status-*.json
+
+# Discovery archives
+pgf/discovery/archive/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
