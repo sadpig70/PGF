@@ -6,14 +6,14 @@
 
 > AI-native design and execution framework for autonomous software engineering
 
-**PG** and **PGF** are skills for [Claude Code](https://docs.anthropic.com/en/docs/claude-code), Anthropic's agentic coding tool.
+**PG** is a platform-agnostic notation — a native language for AI to think, analyze, design, communicate, and review. It is not tied to any specific tool or runtime.
 
-PGF is an intent specification and execution framework that enables AI agents to autonomously design, plan, execute, and verify complex projects using structured notation instead of natural language.
+**PGF** is an execution framework built on PG, implemented as a skill for [Claude Code](https://docs.anthropic.com/en/docs/claude-code). PG can be adopted by any AI agent as its cognitive and communication language; PGF is one concrete runtime implementation on top of it.
 
 ## Core Concepts
 
 ### PG (PPR/Gantree Notation)
-The base language layer with three AI-native constructs:
+The base notation layer — a structured language for AI cognition and communication:
 - **Gantree** — Indentation-based hierarchical task decomposition
 - **PPR** (Pseudo-Programming Representation) — Python-syntax intent specification
 - **AI_ prefix** — AI cognitive operations (judgment, reasoning, recognition, creation)
