@@ -6,6 +6,8 @@
 
 > AI-native design and execution framework for autonomous software engineering
 
+**PG** and **PGF** are skills for [Claude Code](https://docs.anthropic.com/en/docs/claude-code), Anthropic's agentic coding tool.
+
 PGF is an intent specification and execution framework that enables AI agents to autonomously design, plan, execute, and verify complex projects using structured notation instead of natural language.
 
 ## Core Concepts
